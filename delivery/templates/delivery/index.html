@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meal Mate</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff7ed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 420px;
+            background: white;
+            padding: 45px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        h1 {
+            color: #e85d04;
+            font-size: 40px;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            color: #888;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: #444;
+            margin-bottom: 18px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px;
+            margin-bottom: 30px;
+
+            background: #f48c06;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 10px;
+
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #e85d04;
+        }
+
+        .footer {
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍴 Meal Mate</h1>
+
+        <div class="tagline">
+            Your hunger mate!
+        </div>
+
+        <h3>If you are a new user?</h3>
+
+        <a href="{% url 'open_signup' %}" class="btn">
+            Create Account
+        </a>
+
+        <h3>If you are an existing user?</h3>
+
+        <a href="{% url 'open_signin' %}" class="btn">
+            Sign In
+        </a>
+
+        <div class="footer">
+            Good food. Good mood. ❤️
+        </div>
+
+    </div>
+
+</body>
+</html>
